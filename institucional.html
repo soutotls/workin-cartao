@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Cartão Virtual Workin — fale com o Comercial ou Suporte, salve nosso contato e conheça o ERP que conhece o seu tipo de negócio." />
+<title>Cartão Virtual — Workin</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+
+<style>
+  :root, :root[data-theme="light"], :root[data-theme="dark"] {
+    color-scheme: light;
+    --ground: #f4f7f4;
+    --surface: #ffffff;
+    --surface-2: #eef2ee;
+    --ink: #22253A;
+    --muted: #5c6b73;
+    --hair: #dde4df;
+    --accent: #00AD50;
+    --accent-dark: #008a3f;
+    --accent-soft: #e2f5ea;
+    --brand: #22253A;
+    --shadow: 0 1px 2px rgba(34,37,58,.06), 0 8px 24px -12px rgba(34,37,58,.18);
+    --sans: 'Segoe UI', -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink); font-family: var(--sans);
+    line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  .site-header {
+    background: var(--brand); padding: 18px 0; text-align: center;
+    border-bottom: 3px solid var(--accent);
+  }
+  .site-header img { height: 44px; margin: 0 auto; }
+
+  .wrap { max-width: 440px; margin: 0 auto; padding: clamp(20px, 6vw, 40px) 18px 48px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--hair);
+    border-radius: 18px; box-shadow: var(--shadow); overflow: hidden;
+  }
+
+  .avatar-band {
+    position: relative; background: var(--accent); padding: 30px 0;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+  }
+  .avatar-band::before, .avatar-band::after {
+    content: ""; position: absolute; border-radius: 50%; background: rgba(255,255,255,.08);
+  }
+  .avatar-band::before { width: 140px; height: 140px; top: -55px; left: -35px; }
+  .avatar-band::after { width: 100px; height: 100px; bottom: -45px; right: -25px; }
+  .avatar {
+    position: relative; width: 112px; height: 112px; border-radius: 50%; background: #ffffff;
+    display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow);
+  }
+  .avatar img { width: 96px; height: 96px; object-fit: contain; }
+
+  .body { padding: 26px 24px 24px; text-align: center; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px;
+    padding: 5px 11px 5px 9px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent);
+    font-size: 12px; font-weight: 600; letter-spacing: .02em;
+  }
+  .badge .mk { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  h1 {
+    font-size: clamp(19px, 5vw, 22px); line-height: 1.25; margin: 0 0 10px;
+    letter-spacing: -.01em; font-weight: 700;
+  }
+  .bio { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 0 0 22px; }
+
+  .actions { display: flex; flex-direction: column; gap: 10px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 9px;
+    width: 100%; padding: 13px 16px; border-radius: 10px; border: 1.5px solid transparent;
+    font-size: 14.5px; font-weight: 700; font-family: inherit; cursor: pointer;
+    text-decoration: none; transition: transform .1s, background .15s, border-color .15s;
+    min-height: 48px;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-outline { background: var(--surface); color: var(--ink); border-color: var(--hair); }
+  .btn-outline:hover { border-color: var(--accent); background: var(--accent-soft); }
+  .btn .ic { font-size: 16px; line-height: 1; }
+
+  .social {
+    margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--hair);
+    display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap;
+  }
+  .social a {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 600;
+    color: var(--ink); text-decoration: none;
+  }
+  .social a:hover { color: var(--accent); }
+
+  .site-footer {
+    margin-top: 20px; text-align: center; font-size: 11px; color: var(--muted); line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="logo-workin-negativa-header.png" alt="Workin ERP" />
+</header>
+
+<div class="wrap">
+  <section class="card">
+    <div class="avatar-band">
+      <div class="avatar"><img src="workin-simbolo-icon.png" alt="Símbolo Workin" /></div>
+    </div>
+
+    <div class="body">
+      <span class="badge"><span class="mk"></span>Cartão Virtual</span>
+      <h1>Workin — o ERP que conhece o seu tipo de negócio.</h1>
+      <p class="bio">Seu time opera sem treinamento longo e sem precisar entender de fiscal — com suporte humano real, de quem conhece o seu negócio, onde você estiver no Brasil.</p>
+
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="btnSalvar">
+          <span class="ic">💾</span> Salvar contato Workin
+        </button>
+        <a class="btn btn-outline" href="https://wa.me/5567992811252?text=Ol%C3%A1!%20Vim%20pelo%20cart%C3%A3o%20virtual%20da%20Workin." target="_blank" rel="noopener">
+          <span class="ic">💬</span> Falar com o Comercial
+        </a>
+        <a class="btn btn-outline" href="https://wa.me/556721053900?text=Ol%C3%A1!%20Vim%20pelo%20cart%C3%A3o%20virtual%20da%20Workin%2C%20preciso%20de%20suporte." target="_blank" rel="noopener">
+          <span class="ic">🛠️</span> Falar com o Suporte
+        </a>
+        <a class="btn btn-outline" href="https://sistemaworkin.com.br" target="_blank" rel="noopener">
+          <span class="ic">🌐</span> Conhecer o sistema
+        </a>
+      </div>
+
+      <div class="social">
+        <a href="https://instagram.com/sistema_workin" target="_blank" rel="noopener">📷 @sistema_workin</a>
+        <a href="https://www.linkedin.com/company/sistemaworkin/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <p class="site-footer">Workin — 3LMS Manutenção e Sistemas Ltda · CNPJ 24.375.944/0001-01</p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var vcard = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "N:;Workin;;;",
+    "FN:Workin - Sistema ERP",
+    "ORG:Workin (3LMS Manutenção e Sistemas Ltda)",
+    "TEL;TYPE=WORK,VOICE:+556721053900",
+    "TEL;TYPE=WORK,CELL:+5567992811252",
+    "EMAIL:oi@workin.com.br",
+    "URL:https://sistemaworkin.com.br",
+    "NOTE:Cartão Virtual Workin",
+    "END:VCARD"
+  ].join("\r\n");
+
+  document.getElementById("btnSalvar").addEventListener("click", function () {
+    var blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "Workin.vcf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+  });
+})();
+</script>
+
+</body>
+</html>
