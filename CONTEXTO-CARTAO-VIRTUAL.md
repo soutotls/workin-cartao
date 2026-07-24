@@ -36,8 +36,8 @@ Commit + `git push origin main` publica direto no GitHub Pages. Sem pipeline de 
 
 ## 3. Status atual do trabalho — Modelo Institucional
 
-**Arquivo:** `institucional.html` (nesta mesma pasta)
-**Status:** ✅ Construído e ajustado visualmente · ❌ **NÃO publicado ainda** — usuário quer validar com o time inteiro antes do `git push`.
+**Arquivo:** `institucional.html` (nesta mesma pasta) — publicado como `index.html` (home do domínio)
+**Status:** ✅ Construído, validado pelo time e **publicado** (commit `cc23d67`, 24/07/2026).
 
 ### Arquivos locais não commitados (`git status` confirma):
 - `institucional.html`
@@ -109,8 +109,8 @@ END:VCARD
 
 ## 6. Pendências / decisões em aberto
 
-- [ ] **Validação do time** — usuário vai revisar `institucional.html` com a equipe antes de aprovar publicação (bloqueio atual — não publicar sem OK explícito)
-- [ ] Decidir se o institucional vira a **home** (`cartao.sistemaworkin.com.br/`) ou fica em path próprio (`/institucional`), deixando a home livre para o cartão pessoal padrão — pergunta feita ao usuário, ainda sem resposta
+- [x] **Validação do time** — aprovado, publicado em 24/07/2026
+- [x] Decidido: institucional é a **home** (`cartao.sistemaworkin.com.br/`)
 - [ ] CTO ainda precisa confirmar/revisar o DNS
 - [ ] Ativar "Enforce HTTPS" no GitHub Pages assim que o domínio propagar
 - [ ] Iniciar o **modelo Pessoal/Comercial** (por vendedor) — só depois do institucional aprovado. Vai precisar: foto real por vendedor, nome/cargo, WhatsApp próprio (não usar Suporte), mesmo padrão de vCard e CTAs
