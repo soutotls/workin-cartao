@@ -26,8 +26,8 @@ Decidido em conjunto com o usuário: serão **2 modelos**, construídos **nesta 
 | Domínio (CNAME já configurado no repo) | `cartao.sistemaworkin.com.br` |
 | DNS | ✅ Configurado pelo usuário — CTO ainda vai revisar/validar (sem previsão fechada) |
 | GitHub Pages | ✅ Ativado via API (branch `main`, path `/`) |
-| HTTPS enforced | ⏳ Ainda não ativado — fazer depois que o domínio propagar e o certificado for emitido |
-| `index.html` (no ar hoje) | Placeholder "em construção" — **é o que está publicado atualmente** |
+| HTTPS enforced | ✅ Ativado (24/07/2026 — resolvido removendo e reconfigurando o custom domain nas Pages settings pra forçar reemissão do certificado Let's Encrypt) |
+| `index.html` (no ar hoje) | Institucional publicado (commit `cc23d67`) — placeholder substituído |
 
 ### Padrão de publicação (igual ao `workin-lp`)
 Commit + `git push origin main` publica direto no GitHub Pages. Sem pipeline de build.
@@ -112,7 +112,7 @@ END:VCARD
 - [x] **Validação do time** — aprovado, publicado em 24/07/2026
 - [x] Decidido: institucional é a **home** (`cartao.sistemaworkin.com.br/`)
 - [ ] CTO ainda precisa confirmar/revisar o DNS
-- [ ] Ativar "Enforce HTTPS" no GitHub Pages assim que o domínio propagar
+- [x] Ativar "Enforce HTTPS" no GitHub Pages — feito em 24/07/2026
 - [ ] Iniciar o **modelo Pessoal/Comercial** (por vendedor) — só depois do institucional aprovado. Vai precisar: foto real por vendedor, nome/cargo, WhatsApp próprio (não usar Suporte), mesmo padrão de vCard e CTAs
 - [ ] Testar o botão "Salvar contato" em iOS e Android de verdade (comportamento de `.vcf` via Blob pode variar entre navegadores)
 
