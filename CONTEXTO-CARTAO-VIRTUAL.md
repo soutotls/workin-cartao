@@ -46,7 +46,10 @@ Commit + `git push origin main` publica direto no GitHub Pages. Sem pipeline de 
 - `workin-simbolo-icon.png` (**recortado sob medida** — ver nota técnica abaixo)
 
 ### Nota técnica importante — símbolo Workin
-O arquivo original (`Manual da Marca/assets/logo/RGB/workin-simbolo.png`) tem uma tela de 8001×4501px com o desenho ocupando só uma fração pequena — usar ele direto faz o símbolo aparecer minúsculo em qualquer contêiner pequeno (isso já aconteceu e foi corrigido). `workin-simbolo-icon.png` é um recrop 1:1 já centralizado e pronto para uso em avatares/ícones — **usar sempre este arquivo para esse fim, não o original**.
+O arquivo original de 2021 (`Manual da Marca/assets/logo/RGB/workin-simbolo.png`, pasta já removida) tinha uma tela de 8001×4501px com o desenho ocupando só uma fração pequena — usar ele direto faz o símbolo aparecer minúsculo em qualquer contêiner pequeno (isso já aconteceu e foi corrigido). `workin-simbolo-icon.png` é um recrop 1:1 já centralizado e pronto para uso em avatares/ícones — **usar sempre este arquivo para esse fim, não o original**.
+
+### Marca v1.1 (14/10/2026)
+Cartão atualizado para o Manual da Marca v1.1: verde `#269451` (era `#00AD50`), fonte Nunito/Nunito Sans, e `logo-workin-negativa-header.png`, `workin-simbolo-icon.png` e `favicon.png` regerados a partir de `Manual da Marca/pacote-logos/digital-png/` (ponto do "i" no verde oficial). Para novas imagens da marca, partir sempre do pacote.
 
 ### Iterações de ajuste visual já feitas
 1. Avatar 92px → 112px, símbolo 56px → 78px → **96px** (estado atual — o usuário pediu para chegar mais perto da borda do círculo)

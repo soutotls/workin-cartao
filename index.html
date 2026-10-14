@@ -7,6 +7,9 @@
 <title>Cartão Virtual — Workin</title>
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Nunito+Sans:wght@400;600;700&display=swap" />
 
 <style>
   :root, :root[data-theme="light"], :root[data-theme="dark"] {
@@ -17,12 +20,13 @@
     --ink: #22253A;
     --muted: #5c6b73;
     --hair: #dde4df;
-    --accent: #00AD50;
-    --accent-dark: #008a3f;
-    --accent-soft: #e2f5ea;
+    --accent: #269451;
+    --accent-dark: #1E7A42;
+    --accent-soft: #e3f1e8;
     --brand: #22253A;
+    --display: 'Nunito', 'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
     --shadow: 0 1px 2px rgba(34,37,58,.06), 0 8px 24px -12px rgba(34,37,58,.18);
-    --sans: 'Segoe UI', -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    --sans: 'Nunito Sans', 'Segoe UI', -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   * { box-sizing: border-box; }
   body {
@@ -64,13 +68,13 @@
   .badge {
     display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px;
     padding: 5px 11px 5px 9px; border-radius: 999px;
-    background: var(--accent-soft); color: var(--accent);
+    background: var(--accent-soft); color: var(--accent-dark);
     font-size: 12px; font-weight: 600; letter-spacing: .02em;
   }
   .badge .mk { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
   h1 {
     font-size: clamp(19px, 5vw, 22px); line-height: 1.25; margin: 0 0 10px;
-    letter-spacing: -.01em; font-weight: 700;
+    letter-spacing: -.01em; font-weight: 800; font-family: var(--display);
   }
   .bio { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 0 0 22px; }
 
